@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTKN Food & Beverage</title>
+    
+    <!-- Web Icons -->
+    <link rel="icon" type="image/png" href="https://uploads.onecompiler.io/43924vdyc/44c8p7bab/Final.png" />
+    <link rel="apple-touch-icon" href="https://uploads.onecompiler.io/43924vdyc/44c8p7bab/Final.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mtkn: {
+                blue: '#2e3691',    /* The deep blue from the logo */
+                yellow: '#f4e31a',  /* The bright yellow from the logo */
+                light: '#f8f9fa',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0', transform: 'translateY(10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                fadeInDown: {
+                    '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                }
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-out forwards',
+                'fade-in-down': 'fadeInDown 0.3s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body { 
+        font-family: 'Inter', sans-serif; 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      
+      /* Hide scrollbar for Chrome, Safari and Opera globally */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Utility to ensure specific elements hide scrollbar */
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
